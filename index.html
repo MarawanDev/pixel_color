@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Colors App</title>
+  <style>
+    
+    body, h1, p, a {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      text-align: center;
+      background-color: #f2f2f2;
+    }
+    header {
+      margin-top: 20px;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+    }
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .content h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    .content p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    .download-button {
+      text-decoration: none;
+      background-color: #007BFF;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    footer {
+      padding: 20px;
+      background-color: #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    footer p {
+      font-size: 1em;
+      margin-right: 10px;
+    }
+    footer img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+   
+    @media (max-width: 600px) {
+      .content h1 {
+        font-size: 1.5em;
+      }
+      .content p, .download-button {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <header>
+    <img src="icon_app.jpg" >
+  </header>
+
+  <div class="content">
+    <h1>Pixel Colors</h1>
+    <p>size: 9.56MB</p>
+    <a href="Pixel_Colors.apk" download class="download-button">Download</a>
+  </div>
+
+  <footer>
+    <p>Marawan Dev</p>
+    <img src="icon_profile.jpg" >
+  </footer>
+</body>
+</html>
