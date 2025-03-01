@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pixel Colors App</title>
   <style>
-    
     body, h1, p, a {
       margin: 0;
       padding: 0;
@@ -14,7 +13,7 @@
     body {
       display: flex;
       flex-direction: column;
-      min-height: 20vh;
+      min-height: 100vh; /* تأخذ كامل ارتفاع الشاشة */
       text-align: center;
       background-color: #f2f2f2;
     }
@@ -56,6 +55,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-top: auto; /* يدفع الفوتر إلى نهاية الشاشة */
     }
     footer p {
       font-size: 1em;
@@ -66,7 +66,6 @@
       height: 30px;
       border-radius: 50%;
     }
-   
     @media (max-width: 600px) {
       .content h1 {
         font-size: 1.5em;
@@ -78,9 +77,8 @@
   </style>
 </head>
 <body>
-  
   <header>
-    <img src="icon_app.jpg" >
+    <img src="icon_app.jpg" alt="Icon App">
   </header>
 
   <div class="content">
@@ -92,7 +90,7 @@
 
   <footer>
     <p>Marawan Dev</p>
-    <img src="icon_profile.jpg" >
+    <img src="icon_profile.jpg" alt="Marawan Dev">
   </footer>
 </body>
 </html>
